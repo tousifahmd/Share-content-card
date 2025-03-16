@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D7E2F0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #FBFCFC;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+/********************************************** Header **************************************************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    color: #466287;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.header img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/*********************************************** Icons Section *******************************************/
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icons img {
+    background-color: #F8F8F8;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/********************************** Text and Input ********************************************/
+.text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #466287;
+    font-weight: 700;
+    opacity: 0.567;
+    margin-top: 1.5em;
+}
+
+input {
+    margin-top: 15px;
+    padding: 15px;
+    width: 100%;
+    max-width: 90%;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #466287;
+}
+
+/********************  MEDIA QUERIES **************************************** */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 600px;
+        padding: 40px;
+    }
+    .header h2 {
+        font-size: 1.8rem;
+    }
+    .icons img {
+        width: 60px;
+        height: 60px;
+        padding: 18px;
+    }
+    input {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 700px;
+        padding: 50px;
+    }
+    .header h2 {
+        font-size: 2rem;
+    }
+    .icons img {
+        width: 70px;
+        height: 70px;
+        padding: 20px;
+    }
+    input {
+        max-width: 75%;
+    }
+}
